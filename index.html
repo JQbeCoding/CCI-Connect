@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCI Connect</title>
+    <title>CCI Connect | Niner Nation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,7 +25,7 @@
                 </li>
                 <li><a href="#"><img src="images/jobs.png" alt="jobs"> <span>Internships & Jobs</span></a></li>
                 <li><a href="#"><img src="images/message.png" alt="message"> <span>Messaging</span></a></li>
-                <li><a href="#"><img src="images/Joystick-Icon.png" alt="play-games"> <span>Play Games</span></a>
+                <li><a href="#"><img src="images/Joystick-Icon.png" alt="play-games"> <span>Play Games</span></a></li>
                 <li><a href="#"><img src="images/notification.png" alt="notification"> <span>Notifications</span></a>
                 </li>
             </ul>
@@ -76,16 +76,14 @@
 
     <div class="container">
         <div class="left-sidebar">
-            <div class="sidebar-profile-box">
-                <img src="images/Charlotte N. Carolina.png" width="100%">
+            <div class="sidebar-profile-box bento-card">
+                <img src="images/Charlotte N. Carolina.png" width="100%" class="cover-img">
                 <div class="sidebar-profile-info">
-                    <img src="images/Carolina.png">
+                    <img src="images/Carolina.png" class="profile-avatar">
                     <h1>Charlotte N. Carolina</h1>
                     <h3>Computer Science Student at UNC Charlotte | Incoming SWE Intern at Bank of America</h3>
-                    <ul>
-
-                        <li>Your Career
-                            Points<span>15,342</span></li>
+                    <ul class="stats-list">
+                        <li>Your Career Points<span>15,342</span></li>
                         <li>Your profile views <span>42</span></li>
                         <li>Your post views <span>210</span></li>
                         <li>Your Connections<span>315</span></li>
@@ -95,8 +93,10 @@
                         <div class="progress-bar-bg">
                             <div class="progress-bar-fill" style="width: 75%;"></div>
                         </div>
-                        <span class="progress-percentage">75%</span>
-                        <h3 style="font-style: italic;">Almost There!</h3>
+                        <div class="progress-footer">
+                            <h3 class="progress-status">Almost There!</h3>
+                            <span class="progress-percentage">75%</span>
+                        </div>
                     </div>
                 </div>
                 <div class="sidebar-profile-link">
@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="sidebar-activity" id="sidebarActivity">
+            <div class="sidebar-activity bento-card" id="sidebarActivity">
                 <h3>RECENT</h3>
                 <a href="#"><img src="images/green-recents.png">CCI Spring Career Fair</a>
                 <a href="#"><img src="images/green-recents.png">Mock Interview Workshop</a>
@@ -128,39 +128,73 @@
             <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
 
         </div>
+
         <div class="main-content">
-            <div class="create-post">
+            <div class="create-post bento-card">
                 <div class="create-post-input">
                     <img src="images/Carolina.png">
                     <textarea rows="2" placeholder="Share an update, project, or ask Niner Nation..."></textarea>
                 </div>
                 <div class="create-post-links">
-                    <li><img src="images//green-camera.png">Photo</li>
+                    <li><img src="images/green-camera.png">Photo</li>
                     <li><img src="images/green-video.png">Video</li>
                     <li><img src="images/green-news.png">Event</li>
-                    <li>Post</li>
+                    <li class="post-btn-modern">Post</li>
                 </div>
             </div>
+
             <div class="sort-by">
                 <hr>
                 <p>Sort by : <span>top <img src="images/down-arrow.png"></span> </p>
-
             </div>
 
-            <div class="post">
+            <div class="post bento-card">
                 <div class="post-author">
-                    <img style="border-radius: 100%;" src="images/Norm.webp" width="30px" height="40px">
+                    <img class="author-avatar" src="images/Carolina.png">
+                    <div>
+                        <h1>Charlotte N. Carolina</h1>
+                        <small>Computer Science Student at UNC Charlotte | Incoming SWE Intern at Bank of
+                            America</small>
+                        <small>15 seconds ago</small>
+                    </div>
+                </div>
+                <p>Honored to announce I will be interning at Bank of America this summer as a Software Engineer!</p>
+                <img src="images/Bofa.webp" class="post-img" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Quis Franklin and 67 others</span>
+                    </div>
+                    <div>
+                        <span>9 comments &middot; 2 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div class="post-activity-user">
+                        <img src="images/Carolina.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link"><img src="images/like.png"><span>Like</span></div>
+                    <div class="post-activity-link"><img src="images/comment.png"><span>Comment</span></div>
+                    <div class="post-activity-link"><img src="images/share.png"><span>Share</span></div>
+                    <div class="post-activity-link"><img src="images/send.png"><span>Send</span></div>
+                </div>
+            </div>
+
+            <div class="post bento-card">
+                <div class="post-author">
+                    <img class="author-avatar" src="images/Norm.webp">
                     <div>
                         <h1>Norm</h1>
                         <small>Norm | UNCC Mascot</small>
-                        <small>12 minutes ago </small>
+                        <small>12 minutes ago</small>
                     </div>
                 </div>
-                <p>Attention CCI Students! Duke Energy just created a new career simulation game for CCI!
-                    If you are a student that is into industrial technologies this if for you!
-                </p>
-                <img src="images/duke-energy-linkedin.png" width="100%">
-
+                <p>Attention CCI Students! Duke Energy just created a new career simulation game for CCI! If you are a
+                    student that is into industrial technologies this is for you!</p>
+                <img src="images/duke-energy-linkedin.png" class="post-img" width="100%">
                 <div class="post-stats">
                     <div>
                         <img src="images/thumbsup.png">
@@ -173,43 +207,28 @@
                     </div>
                 </div>
                 <div class="post-activity">
-                    <div>
+                    <div class="post-activity-user">
                         <img src="images/Carolina.png" class="post-activity-user-icon">
                         <img src="images/down-arrow.png" class="post-activity-arrow-icon">
-
                     </div>
-                    <div class="post-activity-link">
-                        <img src="images/like.png">
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="images/comment.png">
-                        <span>Comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="images/share.png">
-                        <span>Share</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="images/send.png">
-                        <span>Send</span>
-                    </div>
+                    <div class="post-activity-link"><img src="images/like.png"><span>Like</span></div>
+                    <div class="post-activity-link"><img src="images/comment.png"><span>Comment</span></div>
+                    <div class="post-activity-link"><img src="images/share.png"><span>Share</span></div>
+                    <div class="post-activity-link"><img src="images/send.png"><span>Send</span></div>
                 </div>
             </div>
 
-            <div class="post">
+            <div class="post bento-card">
                 <div class="post-author">
-                    <img src="images/user-3.png">
+                    <img class="author-avatar" src="images/user-3.png">
                     <div>
                         <h1>Dr. Benjamin Leo</h1>
                         <small>Professor of Computer Science at UNC Charlotte</small>
-                        <small>5 hours ago </small>
+                        <small>5 hours ago</small>
                     </div>
                 </div>
-                <p> My favorite part of the job: THE SMILES!!
-                </p>
-                <img src="images/post-image-1.png" width="100%">
-
+                <p>My favorite part of the job: THE SMILES!!</p>
+                <img src="images/post-image-1.png" class="post-img" width="100%">
                 <div class="post-stats">
                     <div>
                         <img src="images/thumbsup.png">
@@ -222,59 +241,52 @@
                     </div>
                 </div>
                 <div class="post-activity">
-                    <div>
+                    <div class="post-activity-user">
                         <img src="images/Carolina.png" class="post-activity-user-icon">
                         <img src="images/down-arrow.png" class="post-activity-arrow-icon">
-
                     </div>
-                    <div class="post-activity-link">
-                        <img src="images/like.png">
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="images/comment.png">
-                        <span>Comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="images/share.png">
-                        <span>Share</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="images/send.png">
-                        <span>Send</span>
-                    </div>
+                    <div class="post-activity-link"><img src="images/like.png"><span>Like</span></div>
+                    <div class="post-activity-link"><img src="images/comment.png"><span>Comment</span></div>
+                    <div class="post-activity-link"><img src="images/share.png"><span>Share</span></div>
+                    <div class="post-activity-link"><img src="images/send.png"><span>Send</span></div>
                 </div>
             </div>
-
         </div>
+
         <div class="right-sidebar">
-            <div class="sidebar-news">
-                <img src="images/green-more.png" class="info-icon">
-                <h3>Charlotte Tech News</h3>
-
-                <a href="#">Bank of America expands Uptown Tech Hub</a>
-                <span>1d ago &middot; 5,934 readers</span>
-
-                <a href="#">Duke Energy partners with UNCC EPIC Center</a>
-                <span>2d ago &middot; 3,043 readers</span>
-
-                <a href="#">Lowe's hiring new grads in South End</a>
-                <span>4d ago &middot; 8,789 readers</span>
-
-                <a href="#">Atrium Health announces tech innovation wing</a>
-                <span>5d ago &middot; 2,436 readers</span>
-
-                <a href="#" class="read-more-link">Read More</a>
-
+            <div class="sidebar-news bento-card action-center">
+                <h3>Niner Action Center</h3>
+                <div class="add-task-container">
+                    <input type="text" placeholder="Add a new task..." class="task-input">
+                    <button type="button" class="add-task-btn">+</button>
+                </div>
+                <div class="task-list">
+                    <h4 class="task-completed">
+                        <s>Land Internship</s>
+                        <span class="check-icon"><img src="images/check-mark.png" width="16px"></span>
+                    </h4>
+                    <h4 class="task-completed">
+                        <s>Apply to Internships</s>
+                        <span class="check-icon"><img src="images/check-mark.png" width="16px"></span>
+                    </h4>
+                    <h4 class="task-completed">
+                        <s>Job Match</s>
+                        <span class="check-icon"><img src="images/check-mark.png" width="16px"></span>
+                    </h4>
+                    <h4 class="task-completed">
+                        <s>Get Resume Reviewed</s>
+                        <span class="check-icon"><img src="images/check-mark.png" width="16px"></span>
+                    </h4>
+                </div>
+                <a href="#" class="read-more-link">Load More</a>
             </div>
 
-            <div class="sidebar-ad">
+            <div class="sidebar-ad bento-card">
                 <small>Ad &middot; &middot; &middot;</small>
                 <p>Kickstart your career in Finance Tech</p>
-                <div>
-                    <img src="images/Carolina.png">
-                    <img src="images/microsoft.png">
-
+                <div class="ad-images">
+                    <img src="images/Carolina.png" class="ad-avatar">
+                    <img src="images/microsoft.png" class="ad-avatar">
                 </div>
                 <b>Bank of America Summer Analyst Programs</b>
                 <a href="#" class="ad-link">Apply Now</a>
@@ -311,7 +323,6 @@
             sideActivity.classList.toggle("open-activity");
             if (sideActivity.classList.contains("open-activity")) {
                 moreLink.innerHTML = "Show less <b>-</b>";
-
             }
             else {
                 moreLink.innerHTML = "Show More <b>+</b>";
