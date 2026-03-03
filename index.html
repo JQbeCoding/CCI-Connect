@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCI Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/charlotte.png" alt="logo"></a>
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search students, faculty, or companies">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="images/home.png" alt="home"> <span>Home</span></a></li>
+                <li><a href="#"><img src="images/Resume-Icon.png" alt="resume-builder"> <span>Resume Builder</span></a>
+                </li>
+                <li><a href="#"><img src="images/jobs.png" alt="jobs"> <span>Internships & Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png" alt="message"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/Joystick-Icon.png" alt="play-games"> <span>Play Games</span></a>
+                <li><a href="#"><img src="images/notification.png" alt="notification"> <span>Notifications</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/Carolina.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/Carolina.png">
+                    <div>
+                        <h3>Charlotte N. Carolina</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/Charlotte N. Carolina.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/Carolina.png">
+                    <h1>Charlotte N. Carolina</h1>
+                    <h3>Computer Science Student at UNC Charlotte | Incoming SWE Intern at Bank of America</h3>
+                    <ul>
+
+                        <li>Your Career
+                            Points<span>15,342</span></li>
+                        <li>Your profile views <span>42</span></li>
+                        <li>Your post views <span>210</span></li>
+                        <li>Your Connections<span>315</span></li>
+                    </ul>
+                    <div class="progress-container">
+                        <h3 id="progress-bar-text">Game Completion</h3>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 75%;"></div>
+                        </div>
+                        <span class="progress-percentage">75%</span>
+                        <h3 style="font-style: italic;">Almost There!</h3>
+                    </div>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="images/green-items.png">My Saved Jobs</a>
+                    <a href="#"><img src="images/premium.png">Career Center Connect</a>
+                </div>
+            </div>
+
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/green-recents.png">CCI Spring Career Fair</a>
+                <a href="#"><img src="images/green-recents.png">Mock Interview Workshop</a>
+                <a href="#"><img src="images/green-recents.png">Software Engineering Capstone</a>
+                <a href="#"><img src="images/green-recents.png">Data Structures Review</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/green-people.png">UNC Charlotte Alumni</a>
+                <a href="#"><img src="images/green-people.png">College of Computing and Informatics</a>
+                <a href="#"><img src="images/green-people.png">Belk College of Business</a>
+                <a href="#"><img src="images/green-people.png">NinerNation Hackathon</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/green-hashtag.png">NinerNation</a>
+                <a href="#"><img src="images/green-hashtag.png">CharlotteJobs</a>
+                <a href="#"><img src="images/green-hashtag.png">UNCC</a>
+                <a href="#"><img src="images/green-hashtag.png">UptownTech</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+                </div>
+            </div>
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+
+        </div>
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/Carolina.png">
+                    <textarea rows="2" placeholder="Share an update, project, or ask Niner Nation..."></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images//green-camera.png">Photo</li>
+                    <li><img src="images/green-video.png">Video</li>
+                    <li><img src="images/green-news.png">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by : <span>top <img src="images/down-arrow.png"></span> </p>
+
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img style="border-radius: 100%;" src="images/Norm.webp" width="30px" height="40px">
+                    <div>
+                        <h1>Norm</h1>
+                        <small>Norm | UNCC Mascot</small>
+                        <small>12 minutes ago </small>
+                    </div>
+                </div>
+                <p>Attention CCI Students! Duke Energy just created a new career simulation game for CCI!
+                    If you are a student that is into industrial technologies this if for you!
+                </p>
+                <img src="images/duke-energy-linkedin.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Carson Smith and 104 others</span>
+                    </div>
+                    <div>
+                        <span>32 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/Carolina.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Dr. Benjamin Leo</h1>
+                        <small>Professor of Computer Science at UNC Charlotte</small>
+                        <small>5 hours ago </small>
+                    </div>
+                </div>
+                <p> My favorite part of the job: THE SMILES!!
+                </p>
+                <img src="images/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Sarah Jenkins and 89 others</span>
+                    </div>
+                    <div>
+                        <span>6 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="images/Carolina.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="images/green-more.png" class="info-icon">
+                <h3>Charlotte Tech News</h3>
+
+                <a href="#">Bank of America expands Uptown Tech Hub</a>
+                <span>1d ago &middot; 5,934 readers</span>
+
+                <a href="#">Duke Energy partners with UNCC EPIC Center</a>
+                <span>2d ago &middot; 3,043 readers</span>
+
+                <a href="#">Lowe's hiring new grads in South End</a>
+                <span>4d ago &middot; 8,789 readers</span>
+
+                <a href="#">Atrium Health announces tech innovation wing</a>
+                <span>5d ago &middot; 2,436 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Kickstart your career in Finance Tech</p>
+                <div>
+                    <img src="images/Carolina.png">
+                    <img src="images/microsoft.png">
+
+                </div>
+                <b>Bank of America Summer Analyst Programs</b>
+                <a href="#" class="ad-link">Apply Now</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About UNCC</a>
+                <a href="#">Career Center</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Partner with Us</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="images/charlotte.png">
+                    <p>CCI Connect &#169; 2026. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu");
+        }
+
+        let sideActivity = document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showMoreLink");
+
+        function toggleActivity() {
+            sideActivity.classList.toggle("open-activity");
+            if (sideActivity.classList.contains("open-activity")) {
+                moreLink.innerHTML = "Show less <b>-</b>";
+
+            }
+            else {
+                moreLink.innerHTML = "Show More <b>+</b>";
+            }
+        }
+    </script>
+</body>
+
+</html>
